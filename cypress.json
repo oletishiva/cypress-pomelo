@@ -1,0 +1,24 @@
+{
+  "projectId": "2eb3sy",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "cypress/support/cypress-multi-reporters.json"
+  }, 
+  "video": false,
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "env": {
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "threshold": 0.01
+      }
+    },
+    "allureResultsPath": "allure-results",
+    "allure": true
+    
+  },
+  "baseUrl":"https://www.pomelofashion.com/th/en/"
+}
+

@@ -1,0 +1,546 @@
+{
+  "uid" : "d74c4ceca03a8b42",
+  "name" : "Navigate to Login page",
+  "fullName" : "Navigate to Login page",
+  "historyId" : "a6a05f4e90a04efd8029de66099eb4e3",
+  "time" : {
+    "start" : 1633672235194,
+    "stop" : 1633672246219,
+    "duration" : 11025
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1633672235195,
+        "stop" : 1633672245310,
+        "duration" : 10115
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit /",
+        "time" : {
+          "start" : 1633672239085,
+          "stop" : 1633672245309,
+          "duration" : 6224
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST 200 https://api.segment.io/v1/p",
+        "time" : {
+          "start" : 1633672245305,
+          "stop" : 1633672245305,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://sdk.iad-03.braze.com/api/v3/data/",
+        "time" : {
+          "start" : 1633672245305,
+          "stop" : 1633672245305,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/homepage-sliders",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/homepage-masonry",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/exchange-rates",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET /healthcheck",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/skinny-banners",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/homepage-videos/",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://api.pomelofashion.com/v6/carts/current/view?include[id_cart]=true",
+        "time" : {
+          "start" : 1633672245306,
+          "stop" : 1633672245306,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/navigations",
+        "time" : {
+          "start" : 1633672245307,
+          "stop" : 1633672245307,
+          "duration" : 0
+        },
+        "status" : "failed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST 200 https://api.segment.io/v1/p",
+        "time" : {
+          "start" : 1633672245307,
+          "stop" : 1633672245307,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 401 https://api.pomelofashion.com/v6/homepage-sliders",
+        "time" : {
+          "start" : 1633672245307,
+          "stop" : 1633672245307,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 https://api.pomelofashion.com/v6/homepage-masonry",
+        "time" : {
+          "start" : 1633672245307,
+          "stop" : 1633672245307,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET https://api.pomelofashion.com/v6/exchange-rates",
+        "time" : {
+          "start" : 1633672245307,
+          "stop" : 1633672245307,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 /healthcheck",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 401 https://api.pomelofashion.com/v6/skinny-banners",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 https://api.pomelofashion.com/v6/homepage-videos/",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 https://api.pomelofashion.com/v6/navigations",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 https://api2.branch.io/v1/has-app/key_live_lfDdllie09t6lilf2zFHdphotEmPOXmz?browser_fingerprint_id=974547255844761699",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://www.google-analytics.com/j/collect?v=1&_v=j93&a=741164591&t=pageview&_s=1&dl=https://www.pomelofashion.com/th/en/&ul=en-us&de=UTF-8&dt=POMELO Fashion | Get all the latest fashion, updated twice every week! - Pomelo&sd=24-bit&sr=1366x768&vp=983x660&je=0&_u=aCDAAEADQAAAAC~&jid=318420665&gjid=224484773&cid=1941684647.1633672243&tid=UA-42457784-1&_gid=1788857341.1633672243&_r=1&gtm=2wga60WPJ57MM&z=898140872",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST 200 https://api2.branch.io/v1/cpid",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST 200 https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j93&tid=UA-42457784-1&cid=1941684647.1633672243&jid=318420665&gjid=224484773&_gid=1788857341.1633672243&_u=aCDAAEACQAAAAC~&z=185493289",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST 200 https://www.google-analytics.com/j/collect?v=1&_v=j93&a=741164591&t=pageview&_s=1&dl=https%3A%2F%2Fwww.pomelofashion.com%2Fth%2Fen%2F&ul=en-us&de=UTF-8&dt=POMELO%20Fashion%20%7C%20Get%20all%20the%20latest%20fashion%2C%20updated%20twice%20every%20week!%20-%20Pomelo&sd=24-bit&sr=1366x768&vp=983x660&je=0&_u=aCDAAEADQAAAAC~&jid=318420665&gjid=224484773&cid=1941684647.1633672243&tid=UA-42457784-1&_gid=1788857341.1633672243&_r=1&gtm=2wga60WPJ57MM&z=898140872",
+        "time" : {
+          "start" : 1633672245308,
+          "stop" : 1633672245308,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://insight.reflow.tv/log/ad?ev=scrape&advid=5f61df96489e8f000142b98d&ad=5f61dfa2489e8f000142b98e&loc=https://www.pomelofashion.com/th/en/&ref=https://www.pomelofashion.com/th/en/&x=1633672244778",
+        "time" : {
+          "start" : 1633672245309,
+          "stop" : 1633672245309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://api2.branch.io/v1/pageview",
+        "time" : {
+          "start" : 1633672245309,
+          "stop" : 1633672245309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET 200 https://gum.criteo.com/sid/json?origin=onetag&domain=pomelofashion.com&sn=ChromeSyncframe&so=0&topUrl=www.pomelofashion.com&cw=1&lsw=1",
+        "time" : {
+          "start" : 1633672245309,
+          "stop" : 1633672245309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST https://insight.reflow.tv/log/ad?ev=scrape&advid=5f61df96489e8f000142b98d&ad=5f61dfa2489e8f000142b98e&loc=https%3A%2F%2Fwww.pomelofashion.com%2Fth%2Fen%2F&ref=https%3A%2F%2Fwww.pomelofashion.com%2Fth%2Fen%2F&x=1633672244778",
+        "time" : {
+          "start" : 1633672245309,
+          "stop" : 1633672245309,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 28,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "get [data-cy=\"auth__login__menu\"]",
+      "time" : {
+        "start" : 1633672245312,
+        "stop" : 1633672245395,
+        "duration" : 83
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "assert expected **<li.jsx-3383453402.desktop.large-menu>** to have text **Login**",
+      "time" : {
+        "start" : 1633672245395,
+        "stop" : 1633672245395,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Login"
+      }, {
+        "name" : "expected",
+        "value" : "Login"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "click",
+      "time" : {
+        "start" : 1633672245396,
+        "stop" : 1633672246218,
+        "duration" : 822
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST https://api.segment.io/v1/t",
+      "time" : {
+        "start" : 1633672246218,
+        "stop" : 1633672246218,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 33,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Homepage Tests"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d74c4ceca03a8b42.json",
+  "parameterValues" : [ ]
+}
