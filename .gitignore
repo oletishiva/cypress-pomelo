@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 
+# reports
+/allure-report
+/allure-results
+
 # Cypress screenshots and videos
 /cypress/videos
 /cypress/screenshots

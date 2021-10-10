@@ -7,4 +7,6 @@ export default{
     txt_password:'[name="password"]',
     btn_createAnAccount:'[data-cy=auth__login__email__button]',
     btn_userMenu:'[data-cy=auth__user__menu]',
+    btn_selectedItem:'.tabs__item.selected',
+    img_close:'.auth__close .icon-image',
 }

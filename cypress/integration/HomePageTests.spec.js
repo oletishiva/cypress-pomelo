@@ -9,22 +9,18 @@ import myshopingbagPO from '../Pages/myshopingbagpage';
 
 var email = generateRandomEmail();
 describe("Homepage Tests",()=>{
-    beforeEach(()=>{
-        cy.clearCookies()
-		cy.clearLocalStorage()
-        cy.visit('/');
-    });
-
-    it("Navigate to Registration form",()=>{
+     
+    it.only("Customer Able to Register on Pomelo Website Successfuylly Using Email",()=>{
         HomePO.navigateToRegistrationForm();
-        cy.get('.tabs__item.selected').should('have.text','Email');
+        registrationPO.isDefaultEmailSelected();
         registrationPO.typeEmail(email);
         registrationPO.typeFirstName(pomeloBasicConstansts.firstName)
         registrationPO.typeLastName(pomeloBasicConstansts.lastName)
         registrationPO.typePassWord(pomeloBasicConstansts.password)
         registrationPO.clickToCreateAccount();
-        cy.get('.auth__close',{timeout: 10000}).click({force: true});
-        registrationPO.get_btnUserMenu().should('have.text',pomeloBasicConstansts.firstName)
+        registrationPO.get_btnUserMenu().contains(pomeloBasicConstansts.welcomeMessage);
+        registrationPO.clikImageClose()   
+        cy.log("account created successfully")
         
         
     });
@@ -38,7 +34,7 @@ describe("Homepage Tests",()=>{
         HomePO.isEmptyShoppingCartImageExists();
     });
 
-    it.only("AddItemsTo the Card",()=>{
+    it("AddItemsTo the Card",()=>{
         
         HomePO.clickshop();
         cy.wait(5000)
@@ -56,8 +52,8 @@ describe("Homepage Tests",()=>{
         myshopingbagPO.typePromeCode();
         myshopingbagPO.clickApply();
         myshopingbagPO.verifyPromoError();
-        cy.get('.cart-remove').click()
-        HomePO.isEmptyShoppingCartImageExists();
+       cy.get('.cart-remove').click()
+       HomePO.isEmptyShoppingCartImageExists();
 
         //shoptabPO.clickListItem(shoptabPO.getallClothings())
         //shoptabPO.getallClothings().click();

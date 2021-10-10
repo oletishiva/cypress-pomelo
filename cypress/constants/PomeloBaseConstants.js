@@ -4,7 +4,8 @@ const pomeloBasicConstansts = {
     lastName:"shiva oleti",
     orgname:"Pomelo",
     existingemail:"shiva.oleti@agoda.com",
-    baseUrl:"https://www.pomelofashion.com/th/en/"
+    baseUrl:"https://www.pomelofashion.com/th/en/",
+    welcomeMessage:"Hi shiva oleti"
 
 }
 

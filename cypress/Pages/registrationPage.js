@@ -1,42 +1,48 @@
 /// <reference types="Cypress" />
-import registrationPage from '../locators/registrationPage.locator'
+import registrationPageLoc from "../locators/registrationPageLoc"
 
 export default{
     get_btnEmail:function()
     {
-        return cy.contains(registrationPage.btn_Email)
+        return cy.contains(registrationPageLoc.btn_Email)
     },
     get_btnPhone:function()
     {
-        return cy.contains(registrationPage.btn_Phone)
+        return cy.contains(registrationPageLoc.btn_Phone)
     },
     get_txtEmail:function()
     {
-        return cy.get(registrationPage.txt_email)
+        return cy.get(registrationPageLoc.txt_email)
     },
     get_txtFirstName:function()
     {
-        return cy.get(registrationPage.txt_firstName)
+        return cy.get(registrationPageLoc.txt_firstName)
     },
     get_txtLastName:function()
     {
-        return cy.get(registrationPage.txt_lastName)
+        return cy.get(registrationPageLoc.txt_lastName)
     },
     get_txtPassword:function()
     {
-        return cy.get(registrationPage.txt_password)
+        return cy.get(registrationPageLoc.txt_password)
     },
     get_btnCreateAccount:function()
     {
-        return cy.get(registrationPage.btn_createAnAccount)
+        return cy.get(registrationPageLoc.btn_createAnAccount)
     },
     get_btnUserMenu:function()
     {
-        return cy.get(registrationPage.btn_userMenu)
+        return cy.get(registrationPageLoc.btn_userMenu)
     },
-
-
-
+    get_selectedItem:function()
+    {
+        return cy.get(registrationPageLoc.btn_selectedItem)
+    },
+    get_imgClose:function()
+    {
+        return cy.get(registrationPageLoc.img_close)
+    },
+    
     clickEmailButton:function()
     {
         this.get_btnEmail().click();
@@ -63,5 +69,15 @@ export default{
     },
     clickToCreateAccount:function(){
         this.get_btnCreateAccount().should('not.be.disabled').click();
+    },
+
+    clikImageClose:function()
+    {
+        this.get_imgClose().click({force:true});
+    },
+    isDefaultEmailSelected:function()
+    {
+        this.get_selectedItem().should('have.text','Email');
     }
+      
 }
