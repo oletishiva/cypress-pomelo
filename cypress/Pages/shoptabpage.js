@@ -4,15 +4,15 @@ import shoptab from '../locators/shoptab.locator'
 
 // Get all locators as reference functions
 export default{
-    getallClothings:function()
+    getLi_allClothings:function()
     {
       return  cy.get(shoptab.li_clothing)
     },
 
 
-    clickAllClothings:function()
+    click_allClothings:function()
     {
-        this.getallClothings().click();
+        this.getLi_allClothings().click();
     },
 
     clickListItem:function(listItem)
