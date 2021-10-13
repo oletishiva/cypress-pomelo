@@ -1,9 +1,9 @@
 {
-  "projectId": "2eb3sy",
+  "projectId": "t1k2ob",
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "configFile": "cypress/support/cypress-multi-reporters.json"
-  }, 
+  },
   "video": false,
   "ignoreTestFiles": [
     "**/__snapshots__/*",
@@ -15,13 +15,10 @@
         "threshold": 0.01
       }
     },
-        "allureResultsPath": "allure-results",
+    "allureResultsPath": "allure-results",
     "allure": true
-    
   },
-  "baseUrl":"https://www.pomelofashion.com/th/en/",
+  "baseUrl": "https://www.pomelofashion.com/th/en/",
   "defaultCommandTimeout": 30000,
-  "morgan": false,
   "retries": 1
 }
-

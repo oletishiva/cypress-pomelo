@@ -12,7 +12,7 @@ export default{
     btn_viewMyShoppingBag:'[data-cy=cart__view_bag]',
     drp_selectQty:'.pml-dropdown__select',
     drp_selectedValue:'.pml-dropdown__select option:selected',
-    btn_cartRemove:'.cart-remove'
+    btn_cartRemove:'.product-image .cart-remove'
 
     
 

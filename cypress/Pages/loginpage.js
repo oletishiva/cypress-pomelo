@@ -13,10 +13,20 @@ export default{
         return cy.get(loginPageLoc.btn_login)
      },
 
+     getBtn_signup:function(){
+        return cy.contains(loginPageLoc.btn_singup)
+
+     },
+
 
 //  click methods
      click_login:function(){
         this.getBtn_login().click();
+     },
+
+     click_signup:function()
+     {
+        this.getBtn_signup().should('be.visible').click();
      },
 
      //

@@ -1,5 +1,6 @@
 
 /// <reference types="Cypress" />
+import '../support/commands'
 import HomePO from '../Pages/homepage'
 import registrationPO from '../Pages/registrationPage'
 import shoptabPO from '../Pages/shoptabpage'
@@ -8,39 +9,62 @@ import pomeloBasicConstansts from '../constants/PomeloBaseConstants';
 import myshopingbagPO from '../Pages/myshopingbagpage';
 import searchItemsPO from '../Pages/searchItemsPage';
 import loginPO from '../Pages/loginpage';
-import myshopingbagLocator from '../locators/myshopingbag.locator';
+import shoptabLoc from '../locators/shoptabLoc';
+import 'cypress-wait-until';
 
 var email = generateRandomEmail();
 
-
-describe(" Non LogedIn User: Add Items to the Shopiing Bag",()=>{
+describe("New User Registration",()=>{
     
-    it("Non Logged In customer can able to add Itesms to the Cart",()=>{
+    it("Customer Able to Register on Pomelo Website Successfuylly Using Email", () => {
+        HomePO.navigateToRegistrationForm();
+        registrationPO.isDefaultEmailSelected();
+        registrationPO.typeEmail(email);
+        registrationPO.typeFirstName(pomeloBasicConstansts.firstName)
+        registrationPO.typeLastName(pomeloBasicConstansts.lastName)
+        registrationPO.typePassWord(pomeloBasicConstansts.password)
+        registrationPO.clickToCreateAccount();
+        registrationPO.get_btnUserMenu().contains(pomeloBasicConstansts.welcomeMessage);
+        registrationPO.clikImageClose()
+        cy.log("account created successfully")
+
+
+    });
+
+    it("Customer Should get Error When trying to register with the exising email", () => {
+        HomePO.navigateToRegistrationForm();
+        registrationPO.isDefaultEmailSelected();
+        registrationPO.typeEmail(pomeloBasicConstansts.existingemail);
+        registrationPO.typeFirstName(pomeloBasicConstansts.firstName)
+        registrationPO.typeLastName(pomeloBasicConstansts.lastName)
+        registrationPO.typePassWord(pomeloBasicConstansts.password)
+        registrationPO.clickToCreateAccount();
+        registrationPO.displayError_EmailAddressAlreadyUsed();
+        cy.log("Error Showed successfully")
+
+
+    });
+
+})
+
+describe(" Non LogedIn User: Add Items to the Shopiing Bag", () => {
+
+    it("Non Logged In customer can able to add Itesms to the Cart", () => {
         cy.wait(10000);
+
         HomePO.clickshop();
         shoptabPO.click_allClothings();
         console.log(cy.url());
-        cy.url().should('include','clothes/clothes')
-        //cy.get('.product-hover-interactions__add-to-bag > .option-items-wrapper >.option-item').first().click({force: true});
-        //cy.get('.product-hover-interactions__add-to-bag ',{timeout:10000}).first().get('.option-items-wrapper >.option-item').first().click({force: true});
+        cy.url().should('include', 'clothes/clothes')
         searchItemsPO.AddItemToBagBySize("S")
-       // cy.wait(5000)
-      // cy.get('[data-cy=cart__view_bag]',{timeout:5000}).click();
         myshopingbagPO.click_viewMyShopingBag();
-        
-       //cy.get('.pml-dropdown__select').last().select('3')
-        
-       // cy.get('.pml-dropdown__select',{timeout:5000}).last().should('have.value', '3')
-       // cy.get('.pml-dropdown__select').last().select('1')
-       // cy.get('.pml-dropdown__select',{timeout:5000}).last().should('have.value', '1')
-       
-    // remove all cart Items
-            myshopingbagPO.click_removeItemsFromCart();
-            HomePO.isEmptyShoppingCartImageExists();
+        // remove all cart Items
+        myshopingbagPO.click_removeItemsFromCart();
+        HomePO.isEmptyShoppingCartImageExists();
     });
 
-    it("Non Logged In customer can able modify the Quantity In the Cart",()=>{
-       
+    it("Non Logged In customer can able modify the Quantity In the Cart", () => {
+
         cy.wait(10000);
         HomePO.clickshop();
         shoptabPO.click_allClothings();
@@ -50,12 +74,12 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag",()=>{
         // cleanup items from the cart
         myshopingbagPO.click_removeItemsFromCart();
         HomePO.isEmptyShoppingCartImageExists();
-        
-   
+
+
     });
 
-    it("Non Logged In customer can able modify the Size In the Cart",()=>{
-       
+    it("Non Logged In customer can able modify the Size In the Cart", () => {
+
         cy.wait(10000);
         HomePO.clickshop();
         shoptabPO.click_allClothings();
@@ -67,12 +91,12 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag",()=>{
         myshopingbagPO.click_removeItemsFromCart();
         HomePO.isEmptyShoppingCartImageExists();
 
-        
-   
+
+
     });
 
-    it("Should Show Error when apply wrong Promocode",()=>{
-        
+    it("Should Show Error when apply wrong Promocode", () => {
+
         HomePO.clickshop();
         cy.wait(10000);
         shoptabPO.click_allClothings();
@@ -85,11 +109,11 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag",()=>{
         //// cleanup items from the cart
         myshopingbagPO.click_removeItemsFromCart();
         HomePO.isEmptyShoppingCartImageExists();
-   
+
     });
 
-    it("Should able to remove items in the shoping Bag",()=>{
-        
+    it("Should able to remove items in the shoping Bag", () => {
+
         HomePO.clickshop();
         cy.wait(10000);
         shoptabPO.click_allClothings();
@@ -97,34 +121,48 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag",()=>{
         myshopingbagPO.click_viewMyShopingBag();
         cy.get('.cart-remove').click()
         HomePO.isEmptyShoppingCartImageExists();
-      
-   
+
+
+
+    });
+    /* This follwing test case will demonstrate the user can able to select the item from different product
+    * and able to check out with out entering promocode. When he check out it should ask for login or signup 
+    *
+    * We can also simply check user landed on login page or not 
+    * The Reason for checking if developer working on Non logged In user functionality/
+    * He can only execute this below method to make sure that login page is not broken
+    * */
+
+    it("Non Logged In Customer Should get the option to login or signup after checkout", () => {
+        HomePO.clickshop();
+        shoptabPO.click_productOfShopTab(shoptabLoc.dresses);
+        console.log(cy.url());
+        // cy.verifyUrlText('/clothes/dresses') --> Currently have issue with the latest cypress to use custom command in spec files
+        cy.url().should('include','/clothes/dresses')
+        searchItemsPO.AddItemToBagBySize("S")
+        myshopingbagPO.click_viewMyShopingBag()
+        myshopingbagPO.click_proceedToCheckout()
+        /* The following will make sure the user got the required options to login  */
+        loginPO.getTxt_email().should('be.visible')
+        loginPO.getTxt_password().should('be.visible')
+        loginPO.getBtn_login().should('be.visible')
+        loginPO.getBtn_signup().should('be.visible')
+
     });
 
-});
-describe("Homepage Tests",()=>{
 
-    it("Navigate to shopiing cart page",()=>{
+});
+
+describe("Shoping Bag Tests With LoggedIn User ", () => {
+
+    it("Navigate to shopiing cart page", () => {
         HomePO.navigateToShoppingCart();
         HomePO.isEmptyShoppingCartImageExists();
     });
-     
-    it("Customer Able to Register on Pomelo Website Successfuylly Using Email",()=>{
-        HomePO.navigateToRegistrationForm();
-        registrationPO.isDefaultEmailSelected();
-        registrationPO.typeEmail(email);
-        registrationPO.typeFirstName(pomeloBasicConstansts.firstName)
-        registrationPO.typeLastName(pomeloBasicConstansts.lastName)
-        registrationPO.typePassWord(pomeloBasicConstansts.password)
-        registrationPO.clickToCreateAccount();
-        registrationPO.get_btnUserMenu().contains(pomeloBasicConstansts.welcomeMessage);
-        registrationPO.clikImageClose()   
-        cy.log("account created successfully")
-        
-        
-    });
 
-    it("LoggedIn User can able to add Items to shopping Bag",()=>{
+    
+
+    it("LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity", () => {
         HomePO.navigateToLoginPage();
         loginPO.typeEmail(pomeloBasicConstansts.existingemail)
         loginPO.typePassword(pomeloBasicConstansts.password)
@@ -133,17 +171,18 @@ describe("Homepage Tests",()=>{
         HomePO.clickshop();
         shoptabPO.click_allClothings();
         console.log(cy.url());
-        cy.url().should('include','clothes/clothes')
+        cy.url().should('include', 'clothes/clothes')
         searchItemsPO.AddItemToBagBySize("M")
-        myshopingbagPO.click_viewMyShopingBag();
-        //myshopingbagPO.click_quantityAndSelect("3");
-        cy.get('.product-image >.cart-remove').each(
-            ($el,index) => {cy.wrap($el).should('be.visible').click()}
-            )
+        myshopingbagPO.click_viewMyShopingBag()
+        cy.pause();
+        myshopingbagPO.click_sizeAndSelect("L") // can able to modify the items in the cart
+        myshopingbagPO.click_quantityAndSelect("2") // can able to modify the count of the items
         HomePO.isEmptyShoppingCartImageExists();
     });
+
+    
 });
-    
 
 
-    
+
+

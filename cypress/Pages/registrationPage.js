@@ -75,9 +75,18 @@ export default{
     {
         this.get_imgClose().click({force:true});
     },
+ 
+
+    // Verification Methods
+
     isDefaultEmailSelected:function()
     {
         this.get_selectedItem().should('have.text','Email');
+    },
+
+    displayError_EmailAddressAlreadyUsed:function()
+    {
+        cy.contains(registrationPageLoc.error_emailAlreadyExists).should('exist')
     }
       
 }

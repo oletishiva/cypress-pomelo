@@ -20,6 +20,11 @@ require('@shelex/cypress-allure-plugin');
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
+const customCommands = require('./commands.js')
+
+module.exports = {
+  commands: customCommands
+}
 
 Cypress.Server.defaults({
     delay: 500,

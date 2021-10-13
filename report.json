@@ -1,0 +1,323 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 10,
+    "passes": 8,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-10-13T12:33:07.020Z",
+    "end": "2021-10-13T12:38:50.778Z",
+    "duration": 343758
+  },
+  "tests": [
+    {
+      "title": "Customer Able to Register on Pomelo Website Successfuylly Using Email",
+      "fullTitle": "New User Registration Customer Able to Register on Pomelo Website Successfuylly Using Email",
+      "duration": 33242,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Customer Should get Error When trying to register with the exising email",
+      "fullTitle": "New User Registration Customer Should get Error When trying to register with the exising email",
+      "duration": 9407,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able to add Itesms to the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able to add Itesms to the Cart",
+      "duration": 30460,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able modify the Quantity In the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Quantity In the Cart",
+      "duration": 26528,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able modify the Size In the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Size In the Cart",
+      "duration": 29757,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should Show Error when apply wrong Promocode",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should Show Error when apply wrong Promocode",
+      "duration": 25729,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should able to remove items in the shoping Bag",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should able to remove items in the shoping Bag",
+      "duration": 22579,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In Customer Should get the option to login or signup after checkout",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In Customer Should get the option to login or signup after checkout",
+      "duration": 12895,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Navigate to shopiing cart page",
+      "fullTitle": "Shoping Bag Tests With LoggedIn User  Navigate to shopiing cart page",
+      "duration": 9477,
+      "currentRetry": 1,
+      "err": {
+        "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+        "type": "existence",
+        "name": "AssertionError",
+        "stack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:136:39)\n    at Context.eval (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:725:23)",
+        "sourceMappedStack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (webpack:///./cypress/Pages/homepage.js:41:43)\n    at Context.eval (webpack:///./cypress/integration/HomePageTests.spec.js:160:16)",
+        "parsedStack": [
+          {
+            "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+            "whitespace": ""
+          },
+          {
+            "function": "Object.isEmptyShoppingCartImageExists",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/Pages/homepage.js",
+            "relativeFile": "cypress/Pages/homepage.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+            "line": 41,
+            "column": 43,
+            "whitespace": "    "
+          },
+          {
+            "function": "Context.eval",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/integration/HomePageTests.spec.js",
+            "relativeFile": "cypress/integration/HomePageTests.spec.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/integration/HomePageTests.spec.js",
+            "line": 160,
+            "column": 16,
+            "whitespace": "    "
+          }
+        ],
+        "codeFrame": {
+          "line": 41,
+          "column": 43,
+          "originalFile": "cypress/Pages/homepage.js",
+          "relativeFile": "cypress/Pages/homepage.js",
+          "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+          "frame": "  39 |     isEmptyShoppingCartImageExists:function()\n  40 |     {\n> 41 |         this.get_emptyShoppingCartImage().should('exist');\n     |                                           ^\n  42 |     },\n  43 |     clickshop:function()\n  44 |     {",
+          "language": "js"
+        }
+      }
+    },
+    {
+      "title": "LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
+      "fullTitle": "Shoping Bag Tests With LoggedIn User  LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
+      "duration": 36910,
+      "currentRetry": 1,
+      "err": {
+        "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+        "type": "existence",
+        "name": "AssertionError",
+        "stack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:136:39)\n    at Context.eval (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:757:23)",
+        "sourceMappedStack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (webpack:///./cypress/Pages/homepage.js:41:43)\n    at Context.eval (webpack:///./cypress/integration/HomePageTests.spec.js:180:16)",
+        "parsedStack": [
+          {
+            "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+            "whitespace": ""
+          },
+          {
+            "function": "Object.isEmptyShoppingCartImageExists",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/Pages/homepage.js",
+            "relativeFile": "cypress/Pages/homepage.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+            "line": 41,
+            "column": 43,
+            "whitespace": "    "
+          },
+          {
+            "function": "Context.eval",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/integration/HomePageTests.spec.js",
+            "relativeFile": "cypress/integration/HomePageTests.spec.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/integration/HomePageTests.spec.js",
+            "line": 180,
+            "column": 16,
+            "whitespace": "    "
+          }
+        ],
+        "codeFrame": {
+          "line": 41,
+          "column": 43,
+          "originalFile": "cypress/Pages/homepage.js",
+          "relativeFile": "cypress/Pages/homepage.js",
+          "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+          "frame": "  39 |     isEmptyShoppingCartImageExists:function()\n  40 |     {\n> 41 |         this.get_emptyShoppingCartImage().should('exist');\n     |                                           ^\n  42 |     },\n  43 |     clickshop:function()\n  44 |     {",
+          "language": "js"
+        }
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "Navigate to shopiing cart page",
+      "fullTitle": "Shoping Bag Tests With LoggedIn User  Navigate to shopiing cart page",
+      "duration": 10494,
+      "currentRetry": 1,
+      "err": {
+        "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+        "type": "existence",
+        "name": "AssertionError",
+        "stack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:136:39)\n    at Context.eval (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:725:23)",
+        "sourceMappedStack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (webpack:///./cypress/Pages/homepage.js:41:43)\n    at Context.eval (webpack:///./cypress/integration/HomePageTests.spec.js:160:16)",
+        "parsedStack": [
+          {
+            "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+            "whitespace": ""
+          },
+          {
+            "function": "Object.isEmptyShoppingCartImageExists",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/Pages/homepage.js",
+            "relativeFile": "cypress/Pages/homepage.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+            "line": 41,
+            "column": 43,
+            "whitespace": "    "
+          },
+          {
+            "function": "Context.eval",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/integration/HomePageTests.spec.js",
+            "relativeFile": "cypress/integration/HomePageTests.spec.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/integration/HomePageTests.spec.js",
+            "line": 160,
+            "column": 16,
+            "whitespace": "    "
+          }
+        ],
+        "codeFrame": {
+          "line": 41,
+          "column": 43,
+          "originalFile": "cypress/Pages/homepage.js",
+          "relativeFile": "cypress/Pages/homepage.js",
+          "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+          "frame": "  39 |     isEmptyShoppingCartImageExists:function()\n  40 |     {\n> 41 |         this.get_emptyShoppingCartImage().should('exist');\n     |                                           ^\n  42 |     },\n  43 |     clickshop:function()\n  44 |     {",
+          "language": "js"
+        }
+      }
+    },
+    {
+      "title": "LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
+      "fullTitle": "Shoping Bag Tests With LoggedIn User  LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
+      "duration": 57523,
+      "currentRetry": 1,
+      "err": {
+        "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+        "type": "existence",
+        "name": "AssertionError",
+        "stack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:136:39)\n    at Context.eval (https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js:757:23)",
+        "sourceMappedStack": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.\n    at Object.isEmptyShoppingCartImageExists (webpack:///./cypress/Pages/homepage.js:41:43)\n    at Context.eval (webpack:///./cypress/integration/HomePageTests.spec.js:180:16)",
+        "parsedStack": [
+          {
+            "message": "AssertionError: Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
+            "whitespace": ""
+          },
+          {
+            "function": "Object.isEmptyShoppingCartImageExists",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/Pages/homepage.js",
+            "relativeFile": "cypress/Pages/homepage.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+            "line": 41,
+            "column": 43,
+            "whitespace": "    "
+          },
+          {
+            "function": "Context.eval",
+            "fileUrl": "https://www.pomelofashion.com/__cypress/tests?p=cypress\\integration\\HomePageTests.spec.js",
+            "originalFile": "webpack:///./cypress/integration/HomePageTests.spec.js",
+            "relativeFile": "cypress/integration/HomePageTests.spec.js",
+            "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/integration/HomePageTests.spec.js",
+            "line": 180,
+            "column": 16,
+            "whitespace": "    "
+          }
+        ],
+        "codeFrame": {
+          "line": 41,
+          "column": 43,
+          "originalFile": "cypress/Pages/homepage.js",
+          "relativeFile": "cypress/Pages/homepage.js",
+          "absoluteFile": "D:\\AutomationRepos\\cypress-pomelo/cypress/Pages/homepage.js",
+          "frame": "  39 |     isEmptyShoppingCartImageExists:function()\n  40 |     {\n> 41 |         this.get_emptyShoppingCartImage().should('exist');\n     |                                           ^\n  42 |     },\n  43 |     clickshop:function()\n  44 |     {",
+          "language": "js"
+        }
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "Customer Able to Register on Pomelo Website Successfuylly Using Email",
+      "fullTitle": "New User Registration Customer Able to Register on Pomelo Website Successfuylly Using Email",
+      "duration": 33242,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Customer Should get Error When trying to register with the exising email",
+      "fullTitle": "New User Registration Customer Should get Error When trying to register with the exising email",
+      "duration": 9407,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able to add Itesms to the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able to add Itesms to the Cart",
+      "duration": 30460,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able modify the Quantity In the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Quantity In the Cart",
+      "duration": 26528,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In customer can able modify the Size In the Cart",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Size In the Cart",
+      "duration": 29757,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should Show Error when apply wrong Promocode",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should Show Error when apply wrong Promocode",
+      "duration": 25729,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Should able to remove items in the shoping Bag",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should able to remove items in the shoping Bag",
+      "duration": 22579,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Non Logged In Customer Should get the option to login or signup after checkout",
+      "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In Customer Should get the option to login or signup after checkout",
+      "duration": 12895,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

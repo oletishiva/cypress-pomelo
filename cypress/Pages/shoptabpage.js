@@ -1,13 +1,20 @@
 /// <reference types="Cypress" />
-import shoptab from '../locators/shoptab.locator'
+import shoptab from '../locators/shoptabLoc'
 
 
 // Get all locators as reference functions
 export default{
     getLi_allClothings:function()
     {
-      return  cy.get(shoptab.li_clothing)
+      return  cy.get(shoptab.clothing)
     },
+
+    getProduct_underShopTab:function( prodname)
+    {
+        return cy.get(prodname);
+    },
+
+
 
 
     click_allClothings:function()
@@ -18,6 +25,11 @@ export default{
     clickListItem:function(listItem)
     {
         listItem.click();
+    },
+
+    click_productOfShopTab(prodname)
+    {
+        this.getProduct_underShopTab(prodname).should('exist').click()
     }
 
 }

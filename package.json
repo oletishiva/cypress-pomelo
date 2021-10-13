@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress": "cypress open",
-    "test": "./node_modules/.bin/cypress run --config video=false --record --key fe7b75fb-2e95-4b11-8924-02cf35bfeb06",
-    "test:video": "./node_modules/.bin/cypress run --config video=true --record --key fe7b75fb-2e95-4b11-8924-02cf35bfeb06",
+    "test": "./node_modules/.bin/cypress run --config video=false --record --key e6209e0a-65be-40ce-a3cf-d94d741edddb",
+    "test:video": "./node_modules/.bin/cypress run --config video=true --record --key e6209e0a-65be-40ce-a3cf-d94d741edddb",
     "debug": "DEBUG=cypress:* ./node_modules/.bin/cypress run",
     "cache:list": "./node_modules/.bin/cypress cache list",
     "cache:clear": "./node_modules/.bin/cypress cache clear",
@@ -22,12 +22,21 @@
   "author": "Shiva Oleti",
   "license": "ISC",
   "devDependencies": {
+    "@mochajs/json-file-reporter": "^1.3.0",
     "@shelex/cypress-allure-plugin": "^2.19.1",
     "allure-commandline": "^2.13.8",
-    "cypress": "^8.5.0",
-    "mocha-allure-reporter": "^1.4.0"
+    "cypress": "^8.6.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-wait-until": "^1.7.1",
+    "mocha": "^8.4.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "mochawesome": "^6.3.1"
   },
   "dependencies": {
-    "cypress-plugin-snapshots": "^1.4.4"
+    "cypress-downloadfile": "^1.2.0",
+    "cypress-plugin-retries": "^1.5.2",
+    "minimist": "1.2.5",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
   }
 }

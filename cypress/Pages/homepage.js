@@ -42,7 +42,7 @@ export default{
     },
     clickshop:function()
     {
-        this.get_tabShop().click();
+        this.get_tabShop().click().should('be.visible');
     },
 
     toggleShopButton:function()
