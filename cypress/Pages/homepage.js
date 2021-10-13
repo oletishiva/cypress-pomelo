@@ -1,4 +1,4 @@
-import homepage from '../locators/homePage.locator'
+import homepage from '../locators/homePageLoc'
 
 
 export default{

@@ -5,71 +5,71 @@
     "passes": 8,
     "pending": 0,
     "failures": 2,
-    "start": "2021-10-13T12:33:07.020Z",
-    "end": "2021-10-13T12:38:50.778Z",
-    "duration": 343758
+    "start": "2021-10-13T13:04:38.705Z",
+    "end": "2021-10-13T13:10:02.077Z",
+    "duration": 323372
   },
   "tests": [
     {
       "title": "Customer Able to Register on Pomelo Website Successfuylly Using Email",
       "fullTitle": "New User Registration Customer Able to Register on Pomelo Website Successfuylly Using Email",
-      "duration": 33242,
+      "duration": 24392,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Customer Should get Error When trying to register with the exising email",
       "fullTitle": "New User Registration Customer Should get Error When trying to register with the exising email",
-      "duration": 9407,
+      "duration": 8685,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able to add Itesms to the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able to add Itesms to the Cart",
-      "duration": 30460,
+      "duration": 24261,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able modify the Quantity In the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Quantity In the Cart",
-      "duration": 26528,
+      "duration": 26428,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able modify the Size In the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Size In the Cart",
-      "duration": 29757,
+      "duration": 26015,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Should Show Error when apply wrong Promocode",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should Show Error when apply wrong Promocode",
-      "duration": 25729,
+      "duration": 23428,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Should able to remove items in the shoping Bag",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should able to remove items in the shoping Bag",
-      "duration": 22579,
+      "duration": 24321,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In Customer Should get the option to login or signup after checkout",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In Customer Should get the option to login or signup after checkout",
-      "duration": 12895,
+      "duration": 13549,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Navigate to shopiing cart page",
       "fullTitle": "Shoping Bag Tests With LoggedIn User  Navigate to shopiing cart page",
-      "duration": 9477,
+      "duration": 10409,
       "currentRetry": 1,
       "err": {
         "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
@@ -117,7 +117,7 @@
     {
       "title": "LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
       "fullTitle": "Shoping Bag Tests With LoggedIn User  LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
-      "duration": 36910,
+      "duration": 37101,
       "currentRetry": 1,
       "err": {
         "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
@@ -168,7 +168,7 @@
     {
       "title": "Navigate to shopiing cart page",
       "fullTitle": "Shoping Bag Tests With LoggedIn User  Navigate to shopiing cart page",
-      "duration": 10494,
+      "duration": 9898,
       "currentRetry": 1,
       "err": {
         "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
@@ -216,7 +216,7 @@
     {
       "title": "LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
       "fullTitle": "Shoping Bag Tests With LoggedIn User  LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity",
-      "duration": 57523,
+      "duration": 58363,
       "currentRetry": 1,
       "err": {
         "message": "Timed out retrying after 5000ms: Expected to find element: `.empty-cart`, but never found it.",
@@ -266,56 +266,56 @@
     {
       "title": "Customer Able to Register on Pomelo Website Successfuylly Using Email",
       "fullTitle": "New User Registration Customer Able to Register on Pomelo Website Successfuylly Using Email",
-      "duration": 33242,
+      "duration": 24392,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Customer Should get Error When trying to register with the exising email",
       "fullTitle": "New User Registration Customer Should get Error When trying to register with the exising email",
-      "duration": 9407,
+      "duration": 8685,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able to add Itesms to the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able to add Itesms to the Cart",
-      "duration": 30460,
+      "duration": 24261,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able modify the Quantity In the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Quantity In the Cart",
-      "duration": 26528,
+      "duration": 26428,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In customer can able modify the Size In the Cart",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In customer can able modify the Size In the Cart",
-      "duration": 29757,
+      "duration": 26015,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Should Show Error when apply wrong Promocode",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should Show Error when apply wrong Promocode",
-      "duration": 25729,
+      "duration": 23428,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Should able to remove items in the shoping Bag",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Should able to remove items in the shoping Bag",
-      "duration": 22579,
+      "duration": 24321,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "Non Logged In Customer Should get the option to login or signup after checkout",
       "fullTitle": " Non LogedIn User: Add Items to the Shopiing Bag Non Logged In Customer Should get the option to login or signup after checkout",
-      "duration": 12895,
+      "duration": 13549,
       "currentRetry": 0,
       "err": {}
     }

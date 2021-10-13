@@ -1,5 +1,5 @@
 /// <reference types="Cypress" />
-import myshopingbaglocator from '../locators/myshopingbag.locator'
+import myshopingbaglocator from '../locators/myshopingbagLoc'
 
 export default {
 
