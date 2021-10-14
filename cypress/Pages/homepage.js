@@ -3,6 +3,10 @@ import homepage from '../locators/homePageLoc'
 
 export default{
 
+    /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
+
     btn_login:function()
     {
         return cy.get(homepage.btn_login);
@@ -24,6 +28,10 @@ export default{
         return cy.get(homepage.btn_shop)
     },
 
+    /* Navigation function 
+    *
+    */
+
     navigateToRegistrationForm :function()
     {
        this.btn_register().click();
@@ -36,10 +44,11 @@ export default{
     {
         this.btn_shotppingcart().click();
     },
-    isEmptyShoppingCartImageExists:function()
-    {
-        this.get_emptyShoppingCartImage().should('exist');
-    },
+
+    /* Action Methods
+    *
+    */
+
     clickshop:function()
     {
         this.get_tabShop().click().should('be.visible');
@@ -56,9 +65,19 @@ export default{
             console.log("Its not expanded");
 
         });
+    },
+
+    /* Verification metods
+    *
+    */
+
+    isEmptyShoppingCartImageExists:function()
+    {
+        this.get_emptyShoppingCartImage().should('exist');
+    }
+    
               
 
-    },
      
     
 

@@ -3,6 +3,10 @@ import loginPageLoc from "../locators/loginPageLoc";
 
 export default{
 
+   /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
+
     getTxt_email:function(){
        return cy.get(loginPageLoc.txt_email)
     },
@@ -19,7 +23,10 @@ export default{
      },
 
 
-//  click methods
+      /* Action Methods
+         *
+         */
+        
      click_login:function(){
         this.getBtn_login().click();
      },

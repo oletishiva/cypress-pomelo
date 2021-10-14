@@ -2,7 +2,11 @@
 import shoptab from '../locators/shoptabLoc'
 
 
-// Get all locators as reference functions
+ /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
+
+
 export default{
     getLi_allClothings:function()
     {
@@ -14,7 +18,9 @@ export default{
         return cy.get(prodname);
     },
 
-
+    /* Action Methods
+    *
+    */
 
 
     click_allClothings:function()

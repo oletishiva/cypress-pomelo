@@ -2,6 +2,10 @@
 import registrationPageLoc from "../locators/registrationPageLoc"
 
 export default{
+
+     /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
     get_btnEmail:function()
     {
         return cy.contains(registrationPageLoc.btn_Email)
@@ -42,6 +46,12 @@ export default{
     {
         return cy.get(registrationPageLoc.img_close)
     },
+
+    /* Action Methods
+    *
+    */
+
+
     
     clickEmailButton:function()
     {
@@ -77,7 +87,10 @@ export default{
     },
  
 
-    // Verification Methods
+    
+    /* Verification metods
+    *
+    */
 
     isDefaultEmailSelected:function()
     {

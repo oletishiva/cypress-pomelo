@@ -2,6 +2,11 @@
 import searchItemsPageLoc from "../locators/searchItemsPageLoc"
 
 export default{
+
+     /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
+
     getBtnAddToBag:function()
     {
         return cy.get(searchItemsPageLoc.btn_addToBag)
@@ -16,7 +21,9 @@ export default{
 
 
 
-    //Click Methods on Search Results Page
+    /* Action Methods
+    *
+    */
 
     clickAddToBag: function(){
         

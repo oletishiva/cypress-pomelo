@@ -3,6 +3,10 @@ import myshopingbaglocator from '../locators/myshopingbagLoc'
 
 export default {
 
+     /* Getter Methods to get the locators and used to apply actions 
+    *
+    */
+
     getTxt_promocode: function () {
         return cy.get(myshopingbaglocator.txt_promocode)
     },
@@ -30,7 +34,10 @@ export default {
     },
 
 
-    // click methods
+    /* Action Methods
+    *
+    */
+
     click_apply: function () {
         this.getBtn_apply().click();
     },
@@ -72,6 +79,9 @@ export default {
     },
 
 
+    /* Verification metods
+    *
+    */
 
 
 

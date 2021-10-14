@@ -119,7 +119,7 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag", () => {
         shoptabPO.click_allClothings();
         searchItemsPO.AddItemToBagBySize("S")
         myshopingbagPO.click_viewMyShopingBag();
-        cy.get('.cart-remove').click()
+        myshopingbagPO.click_removeItemsFromCart();
         HomePO.isEmptyShoppingCartImageExists();
 
 
@@ -135,6 +135,7 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag", () => {
 
     it("Non Logged In Customer Should get the option to login or signup after checkout", () => {
         HomePO.clickshop();
+        cy.wait(10000);
         shoptabPO.click_productOfShopTab(shoptabLoc.dresses);
         console.log(cy.url());
         // cy.verifyUrlText('/clothes/dresses') --> Currently have issue with the latest cypress to use custom command in spec files
@@ -174,9 +175,9 @@ describe("Shoping Bag Tests With LoggedIn User ", () => {
         cy.url().should('include', 'clothes/clothes')
         searchItemsPO.AddItemToBagBySize("M")
         myshopingbagPO.click_viewMyShopingBag()
-        cy.pause();
-        myshopingbagPO.click_sizeAndSelect("L") // can able to modify the items in the cart
+         myshopingbagPO.click_sizeAndSelect("L") // can able to modify the items in the cart
         myshopingbagPO.click_quantityAndSelect("2") // can able to modify the count of the items
+        myshopingbagPO.click_removeItemsFromCart();
         HomePO.isEmptyShoppingCartImageExists();
     });
 
