@@ -20,5 +20,5 @@
   },
   "baseUrl": "https://www.pomelofashion.com/th/en/",
   "defaultCommandTimeout": 30000,
-  "retries": 1
+  "retries": 0
 }

@@ -92,6 +92,7 @@ export default {
     /* This method is used to remove items from shopping cart */
 
     removeItemFromCart: function (el) {
+
         
         this.getBtn_removeFromCart().each(
             ($el, index, $list) => { 
@@ -102,6 +103,18 @@ export default {
                 cy.log("no items to click")
                 }
         )
+    },
+
+
+    removeItemsFromCart: function (l) {
+        
+        const cartItems= this.getBtn_removeFromCart();
+        cartItems.each(($el,index)=>{  
+                this.getBtn_removeFromCart().first().click();          
+        })
+
+        
+    
     }
 
 

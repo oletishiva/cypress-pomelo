@@ -125,6 +125,8 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag", () => {
 
 
     });
+
+
     /* This follwing test case will demonstrate the user can able to select the item from different product
     * and able to check out with out entering promocode. When he check out it should ask for login or signup 
     *
@@ -156,14 +158,7 @@ describe(" Non LogedIn User: Add Items to the Shopiing Bag", () => {
 
 describe("Shoping Bag Tests With LoggedIn User ", () => {
 
-    it("Navigate to shopiing cart page", () => {
-        HomePO.navigateToShoppingCart();
-        HomePO.isEmptyShoppingCartImageExists();
-    });
-
-    
-
-    it("LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity", () => {
+       it("LoggedIn User can able to add Items to shopping Bag, modify Size and Quantity", () => {
         HomePO.navigateToLoginPage();
         loginPO.typeEmail(pomeloBasicConstansts.existingemail)
         loginPO.typePassword(pomeloBasicConstansts.password)
@@ -177,7 +172,12 @@ describe("Shoping Bag Tests With LoggedIn User ", () => {
         myshopingbagPO.click_viewMyShopingBag()
          myshopingbagPO.click_sizeAndSelect("L") // can able to modify the items in the cart
         myshopingbagPO.click_quantityAndSelect("2") // can able to modify the count of the items
-        myshopingbagPO.click_removeItemsFromCart();
+        myshopingbagPO.removeItemsFromCart();
+        HomePO.isEmptyShoppingCartImageExists();
+    });
+
+    it("Navigate to shopiing cart page", () => {
+        HomePO.navigateToShoppingCart();
         HomePO.isEmptyShoppingCartImageExists();
     });
 
